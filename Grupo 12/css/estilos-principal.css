@@ -73,8 +73,8 @@
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    background-color: rgb(62, 62, 62);
-   padding: 20px;
-   gap: 20px;
+   padding: 30px;
+   gap: 30px;
    text-align: center;
 }
 .articulo-categoria{
