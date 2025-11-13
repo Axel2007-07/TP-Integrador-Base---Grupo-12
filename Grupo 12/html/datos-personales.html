@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/Grupo 12/css/estilos-datos-personales.css">
+   <title>Datos personales</title>
+</head>
+<body class="flex">
+   <header></header>
+   <main>
+      <div class="login-contenedor">
+         <h1 id="usuario">Mi usuario</h1>
+         <hr>
+         <form action="#" method="post" class="form-contenedor">
+         
+         <div class="flex flex-column padding-10 gap-10">
+            <div class="flex gap-label">
+               <label for="email">Email principal</p>
+               <input type="email" name="email" id="email" placeholder="       @gmail.com" class="width-100">
+            </div> 
+            <button type="submit" class="width-40">Guardar cambios</button>
+         </div>
+         <hr>
+         <div class="flex flex-column padding-10 gap-10">
+            <div class="">
+               <label for="contraseña">Contraseña</p>
+               <input type="password" id="contraseña" name="contraseña" placeholder="*********" >
+            </div>
+            <button type="submit" id="cambiar"> Cambiar</button>        
+         </div>
+         <hr>
+         <h1>Datos personales</h1>
+         <div class="flex flex-column gap-10">
+            <div class="grid grid-cols-2">
+            <div>
+               <label for="contraseña">Nombre</p>
+               <input type="text" name="Nombre" id="Nombre" > 
+            </div>
+            <div>
+               <label for="contraseña">Apellido</p>
+               <input type="text" name="Apellido" id="Apellido">
+            </div>
+         </div>
+         <div class="grid grid-cols-3 gap-4">
+            <div>
+               <label for="contraseña">Tipo</p>
+               <input type="text" name="Tipo" id="Tipo"> 
+            </div>
+            <div>
+               <label for="contraseña">Número de documento</p>
+               <input type="number" name="NumeroDocumento" id="NumeroDocumento"> 
+            </div>
+            <div>
+               <label for="contraseña">Fecha de nacimiento</p>
+               <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+            </div>
+         </div>
+         <div class="grid grid-cols-2">
+            <div>
+               <label for="contraseña">Teléfono</p>
+               <input type="tel" name="Telefono" id="Telefono">
+            </div>
+            <div>
+               <label for="contraseña">Email secundario</p>
+               <input type="email" name="EmailSecundario" id="EmailSecundario">
+            </div>
+         </div>
+         
+         <button type="submit"> Guardar cambios</button>
+         </div>
+      </div>
+   </main>
+   <footer></footer>
+</body>
+</html>
