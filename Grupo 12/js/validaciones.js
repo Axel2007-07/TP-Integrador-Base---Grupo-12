@@ -1,4 +1,6 @@
-
+//
+//      ITEMS
+//
 const categoriaUno = document.getElementById("categoria00-item01");
 
 categoriaUno.addEventListener("mouseover", function () {
@@ -110,3 +112,110 @@ categoriaDoce.addEventListener("mouseout", function () {
     categoriaDoce.classList.remove("resaltado");
 });
 
+//
+// LOGIN
+//
+document.addEventListener("DOMContentLoaded", function () {
+    const formulario = document.querySelector('.form-contenedor');
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password'); // ID CORREGIDO
+    const btnLogin = document.getElementById('btn-login');
+
+    function validarEmail(email) {
+        const patronEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.(com|org|net)$/;
+        return patronEmail.test(email);
+    }
+
+    function validarPassword(password) {
+
+        const patronContrasenia = /^(?=.{8,12}$)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[#?!%$-])/;
+        return patronContrasenia.test(password);
+    }
+
+    function manejarErrorVisual(inputElement, esValido) {
+        if (esValido) {
+            inputElement.classList.remove('campo-obligatorio-vacio');
+        } else {
+            inputElement.classList.add('campo-obligatorio-vacio');
+        }
+    }
+});
+//
+//REGISTRARSE
+//
+document.addEventListener("DOMContentLoaded", function () {
+
+    const formulario = document.querySelector('.form-contenedor');
+    const campoEmail = document.getElementById('email');
+    const campoContraseña = document.getElementById('password');
+    const botonRegistro = document.getElementById('btn-registro');
+
+    function verificarFormatoEmail(valorEmail) {
+        const patronEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.(com|org|net)$/;
+        return patronEmail.test(valorEmail);
+    }
+
+    function verificarSeguridadContraseña(valorContraseña) {
+        const patronContraseña = /^(?=.{8,12}$)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[#?!%$-])/;
+        return patronContraseña.test(valorContraseña);
+    }
+
+    function manejarRecuadroRojo(elementoInput, esValido) {
+        if (esValido) {
+            elementoInput.classList.remove('campo-obligatorio-vacio');
+        } else {
+            elementoInput.classList.add('campo-obligatorio-vacio');
+        }
+    }
+    function actualizarEstadoRegistro() {
+        const emailEsValido = verificarFormatoEmail(campoEmail.value.trim());
+        const contraseñaEsSegura = verificarSeguridadContraseña(campoContraseña.value.trim());
+
+        manejarRecuadroRojo(campoEmail, emailEsValido);
+        manejarRecuadroRojo(campoContraseña, contraseñaEsSegura);
+
+        if (emailEsValido && contraseñaEsSegura) {
+            botonRegistro.disabled = false;
+        } else {
+            botonRegistro.disabled = true;
+        }
+    }
+});
+//
+//Recuperar password
+//
+document.addEventListener("DOMContentLoaded", function () {
+
+    const formulario = document.querySelector('.form-contenedor');
+    const campoEmail = document.getElementById('email');
+    const botonContinuar = document.getElementById('btn-continuar');
+
+    function verificarFormatoEmail(valorEmail) {
+        const patronEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.(com|org|net)$/;
+        return patronEmail.test(valorEmail.trim());
+    }
+
+    function manejarRecuadroRojo(elementoInput, esValido) {
+        if (esValido) {
+            elementoInput.classList.remove('campo-obligatorio-vacio');
+        } else {
+            elementoInput.classList.add('campo-obligatorio-vacio');
+        }
+    }
+
+    function actualizarEstadoFormulario() {
+        const emailEsValido = verificarFormatoEmail(campoEmail.value);
+
+        manejarRecuadroRojo(campoEmail, emailEsValido);
+
+        if (emailEsValido) {
+            botonContinuar.disabled = false;
+        } else {
+            botonContinuar.disabled = true;
+        }
+    }
+});
+
+//
+//
+//
