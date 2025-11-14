@@ -109,3 +109,4 @@ categoriaDoce.addEventListener("mouseover", function () {
 categoriaDoce.addEventListener("mouseout", function () {
     categoriaDoce.classList.remove("resaltado");
 });
+
