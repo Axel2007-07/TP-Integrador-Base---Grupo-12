@@ -27,31 +27,35 @@
    height:100px;
 }
 #encabezado-principal{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   background-color: gray;
-   padding: 10px;
-   height: 80px;
+   background-color: rgb(255, 42, 42); 
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 10px 20px; 
+    height: 100px;
 }
 #encabezado-principal img {
-    width: 80px; 
-    height: 80px;
-    padding: 50px;
-    }
+   width: 300px; 
+    height: 70px;
+    padding: 0;
+}
 
 
 #encabezado-principal input[type="search"]{
-   width: 800px;
-   margin: 300px;
-   padding: 15px;
-   font-size: 15px;
-   border: 1px solid;
-   border-radius: 5px;
+   width: 400px;             
+    margin: 0 40px;          
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 5px;
 }
 #encabezado-principal p{
-  padding: 50px;
-   font-size: 40px;
+  padding: 0; 
+    font-size: 20px;
 }
 #navegacion-categoria{
    display: grid;

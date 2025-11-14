@@ -6,24 +6,39 @@
 }
 
 body{
-    background-color: rgb(39, 107, 156);
-    display: flex;
-    justify-content: center;
-    margin: 60px;
+    
+    background-image: url('../assets/img/fondo4.jpg'); 
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;    
+    background-attachment: fixed;    
+    
+    
+    min-height: 100vh;        
+    display: flex;            
+    
+    justify-content: center;  
+    align-items: center;      
+    
+  
+   margin: 0;
 }
 
 .login-contenedor{
     background-color: white;
-    padding: 30px;
-    border: 1px solid black;
+    padding: 60px;
+    border: 2px solid black;
     text-align: center;
-    width: 400px;
+    width: 90%;
+    max-width: 600px;  
+    opacity: 0.9;
 }
 
 .form-contenedor{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 
 h1{
