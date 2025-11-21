@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function validarPassword(password) {
 
-        const patronContrasenia = /^(?=.{8,12}$)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[#?!%$-])/;
+        const patronContrasenia = /^(?=.{8,12}$)(?=.[A-Z])(?=.[a-z])(?=.[0-9])(?=.[#?!%$-])/;
         return patronContrasenia.test(password);
     }
 
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function verificarSeguridadContraseña(valorContraseña) {
-        const patronContraseña = /^(?=.{8,12}$)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[#?!%$-])/;
+        const patronContraseña = /^(?=.{8,12}$)(?=.[A-Z])(?=.[a-z])(?=.[0-9])(?=.[#?!%$-])/;
         return patronContraseña.test(valorContraseña);
     }
 
