@@ -1,5 +1,46 @@
 .resaltado {
     color: white;
     transform: scale(1.05);
-    transition: transform 0.5s;
+    transition: transform 0.3s;
+}
+
+.campo-obligatorio-vacio {
+    border: 2px solid red;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+    background-color: #ffeaea;
+}
+
+#btn-login:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#btn-login:not(:disabled) {
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.campo-obligatorio-vacio {
+    border: 2px solid red;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+    background-color: #ffeaea;
+}
+
+#btn-registro:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.campo-obligatorio-vacio {
+    border: 2px solid red;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+    background-color: #ffeaea;
+}
+
+#btn-continuar:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
 }
